@@ -2,4 +2,4 @@
 
 require_relative '../lib/fibonacci_sum'
 
-FibonacciSum::Cli.run(ARGV)
+FibonacciSum::Cli.even_sums(ARGV)

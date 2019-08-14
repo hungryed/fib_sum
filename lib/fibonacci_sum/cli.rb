@@ -6,8 +6,8 @@ module FibonacciSum
     attr_reader :args
 
     class << self
-      def run(args)
-        new(*args).run!
+      def even_sums(args)
+        new(*args).even_sums
       end
     end
 
@@ -15,7 +15,7 @@ module FibonacciSum
       @args = args
     end
 
-    def run!
+    def even_sums
       arg_parser.parse_args
       p FibonacciSum.even_sums(
         ceiling: ceiling
